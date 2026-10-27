@@ -1,0 +1,6 @@
+image,input_type,CER (%),WER (%)
+synthetic_receipt_photo,raw_photograph,21.2,25.0
+synthetic_receipt_photo,adaptive_gaussian,0.4,0.0
+synthetic_receipt_photo,otsu,0.8,2.5
+synthetic_receipt_photo,sauvola,0.4,0.0
+synthetic_receipt_photo,grayscale_only,0.4,0.0

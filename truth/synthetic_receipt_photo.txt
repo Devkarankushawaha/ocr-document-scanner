@@ -1,0 +1,14 @@
+GREENLEAF CAFE
+123 Market Street
+Kanpur, UP 208001
+Date: 29-09-2026
+Bill No: 004521
+Cappuccino x2 180.00
+Veg Sandwich 120.00
+French Fries 90.00
+Choco Brownie 150.00
+Iced Tea 80.00
+SUBTOTAL 620.00
+TAX (5%) 31.00
+TOTAL Rs 651.00
+Thank you, visit again!

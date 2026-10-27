@@ -120,9 +120,9 @@ def main():
 
     st.subheader("Pipeline stages")
     s1, s2, s3 = st.columns(3)
-    s1.image(result["original"], channels="BGR", caption="1. Original photo", use_container_width=True)
-    s2.image(result["corners"], channels="BGR", caption="2. Detected corners", use_container_width=True)
-    s3.image(result["flattened"], channels="BGR", caption="3. Flattened page", use_container_width=True)
+    s1.image(result["original"], channels="BGR", caption="1. Original photo")
+    s2.image(result["corners"], channels="BGR", caption="2. Detected corners")
+    s3.image(result["flattened"], channels="BGR", caption="3. Flattened page")
 
     st.subheader("Binarization methods")
     names = [n for n, v in result["variants"].items() if v["image"] is not None]
@@ -130,20 +130,19 @@ def main():
     for tab, name in zip(tabs, names):
         with tab:
             left, right = st.columns(2)
-            left.image(result["variants"][name]["image"], caption=name, use_container_width=True)
+            left.image(result["variants"][name]["image"], caption=name)
             right.text_area("OCR text", result["variants"][name]["text"], height=300, key=f"t_{name}")
 
     if result["metrics"]:
         st.subheader("Accuracy against your ground truth (lower is better)")
-        st.dataframe(result["metrics"], use_container_width=True, hide_index=True)
+        st.dataframe(result["metrics"], hide_index=True)
 
     st.subheader("Download")
     d1, d2 = st.columns(2)
     d1.download_button("Extracted text (.txt)", result["best_text"],
-                       file_name="extracted_text.txt", use_container_width=True)
+                       file_name="extracted_text.txt")
     d2.download_button("Flattened scan (.jpg)", result["flattened_jpg"],
-                       file_name="scanned_document.jpg", mime="image/jpeg",
-                       use_container_width=True)
+                       file_name="scanned_document.jpg", mime="image/jpeg")
 
 
 if __name__ == "__main__":
