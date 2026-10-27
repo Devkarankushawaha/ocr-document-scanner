@@ -1,0 +1,6 @@
+image,input_type,CER (%),WER (%)
+test,raw_photograph,38.83,45.61
+test,adaptive_gaussian,43.12,49.12
+test,otsu,25.21,23.68
+test,sauvola,32.38,35.96
+test,grayscale_only,25.36,25.44

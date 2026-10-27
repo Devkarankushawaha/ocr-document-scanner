@@ -1,0 +1,9 @@
+__pycache__/
+output/
+hard_test_bill/
+synthetic_receipt_photo/
+test_invoice_sideways/
+test_upside_down/
+2_flattened_color.jpg
+3_binarized_otsu.jpg
+run.txt
